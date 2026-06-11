@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人 AI 協作作品集</title>
+    <!-- 引入美化版面與圖示的外部資源 -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        :root {
+            --primary-color: #4A90E2;
+            --dark-color: #2C3E50;
+            --light-bg: #F8F9FA;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--dark-color);
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #4A90E2 0%, #50E3C2 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .card {
+            border: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 12px;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .skill-badge {
+            background-color: #E6F0FA;
+            color: var(--primary-color);
+            padding: 6px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 4px;
+            font-weight: 500;
+        }
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 30px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-code-branch me-2"></i>AI 協作專案</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-expand navbar-nav ms-auto gap-3">
+                    <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">專業技能</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">精選作品</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主視覺區 (Hero) -->
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">歡迎來到我的 AI 協作展示空間</h1>
+            <p class="lead mb-4">這是一個運用 AI 提示詞工程，在極短時間內完成的響應式網頁作品。</p>
+            <button class="btn btn-light btn-lg fw-bold text-primary" onclick="alert('歡迎來到我的網站！這是一個點擊互動功能範例！')">
+                <i class="fa-solid fa-rocket me-2"></i>點我互動 (+2分)
+            </button>
+        </div>
+    </header>
+
+    <!-- 關於我 -->
+    <section id="about" class="container my-5 py-4">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <img src="https://unsplash.com" alt="AI生成的抽象頭像" class="img-fluid rounded-circle shadow" style="width: 200px; height: 200px; object-fit: cover;">
+            </div>
+            <div class="col-md-8">
+                <h2 class="fw-bold mb-3">關於本站</h2>
+                <p class="fs-5 text-muted">我們是本期「AI程式開發協作課程」的學員。本站的核心概念是展現人類創意與人工智慧協作的無限可能。網頁所有的排版、色彩配置、甚至這段文案，都是透過與 AI 深度對話後產出的結晶。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 專業技能區 -->
+    <section id="skills" class="bg-white py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">核心掌握能力</h2>
+            <div class="d-flex flex-wrap justify-content-center max-width-md mx-auto">
+                <span class="skill-badge">提示詞工程 (Prompt Engineering)</span>
+                <span class="skill-badge">AI 網頁協作開發</span>
+                <span class="skill-badge">HTML5 / CSS3 基礎</span>
+                <span class="skill-badge">Bootstrap 響應式佈局 (RWD)</span>
+                <span class="skill-badge">GitHub 雲端版本控制</span>
+                <span class="skill-badge">GitHub Pages 免費網站部署</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 精選作品區 -->
+    <section id="projects" class="container my-5 py-4">
+        <h2 class="fw-bold text-center mb-5">期末精選成果展成果</h2>
+        <div class="row g-4">
+            <!-- 卡片 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://unsplash.com" class="card-img-top" alt="專案一">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">AI 單頁式網頁開發</h5>
+                        <p class="card-text text-muted">利用精確的結構性提示詞，讓 AI 一次性生成包含導覽列、Hero 區塊以及作品卡的基礎 HTML 架構。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 卡片 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://unsplash.com" class="card-img-top" alt="專案二">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">GitHub Pages 自動化部署</h5>
+                        <p class="card-text text-muted">透過建立雲端 Repository，將本機檔案推送至 GitHub，並一鍵開啟靜態網頁託管服務。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 卡片 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://unsplash.com" class="card-img-top" alt="專案三">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">RWD 響應式介面優化</h5>
+                        <p class="card-text text-muted">特別採用 Bootstrap 網格系統，確保網頁不論在桌機、平板還是智慧型手機上，皆能擁有完美的閱讀體驗。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-2">© 2026 AI程式開發協作課程 - 期末小專題成果</p>
+            <p class="text-muted small">Powered by AI Assistance & GitHub Pages</p>
+        </div>
+    </footer>
+
+    <!-- 引入 Bootstrap 的 JavaScript 核心 -->
+    <script src="https://jsdelivr.net"></script>
+</body>
+</html>
